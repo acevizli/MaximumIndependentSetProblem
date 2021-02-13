@@ -1,4 +1,7 @@
 # MaximumIndependentSetProblem
+
+Sabancı University Fall 2020-2021 CS301 Algorithm Course project
+
 An analysis of heuristic algorithm that  is based on maximum independent set algorithm
 
 Heuristic algorithm can be found in http://ceur-ws.org/Vol-2098/paper12.pdf [1]
