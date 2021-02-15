@@ -88,8 +88,7 @@ void MIS(std::vector<bool>& marked,std::vector<int> & MIS,int & EST) // heuristi
         }
         MIS.push_back(minIndex);
         mark(minIndex, marked,vertexCount); //O(VE)
-        //if(minValueM>EST) EST = minValueM;
-        EST += minValueM;
+        if(minValueM>EST) EST = minValueM;
     }
 }
 bool isIndependentSet(std::vector<int>& MIS) // checks for given set is independent set or not with respect to graph
@@ -341,6 +340,6 @@ int main()
         for (auto i : MISet) std::cout << i<<", ";
         std::cout << "}\nAll Max independent sets:\n";     // comparison part
         printMaximalIndependentSets();
-        std::cout << "Estimation Value: " << EST*1.0/NODE_NUMBER << std::endl;
+        std::cout << "Estimation Value: " << EST  << std::endl;
     }
 }
